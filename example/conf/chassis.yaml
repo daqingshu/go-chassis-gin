@@ -1,0 +1,17 @@
+---
+servicecomb:
+  registry:
+    disabled: true
+  protocols:
+    rest:
+      listenAddress: 127.0.0.1:5002
+    gin:
+      listenAddress: 127.0.0.1:5001
+  metrics:
+    apiPath: /metrics      # we can also give api path having prefix "/" ,like /adas/metrics
+    enable: true
+    enableGoRuntimeMetrics: true
+    enableCircuitMetrics: true
+  profile:
+    enable: true
+    apiPath: /profile
